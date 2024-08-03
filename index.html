@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="header">
+        <form id="currency-form">
+            <label for="baseCurrency">Enter the Currency code (e.g., USD, EUR, JPY, EGP): </label><br>
+            <input type="text" id="baseCurrency" class="input" value="USD"><br>
+            <label for="amount">Enter the amount you want to convert: </label><br>
+            <input type="number" id="amount" class="amount" value="1"><br><br>
+            <label for="conversionType">Select a server: </label><br>
+            <select id="servertype" class="select">
+                <option value="1">first server</option>
+                <option value="2">second server</option>
+                <option value="3">third server</option>
+            </select><br><br>
+            <label for="conversionType">Select an option: </label><br>
+            <select id="conversionType" class="select">
+                <option value="1">Currency => الدرهم/الدينار</option>
+                <option value="2">الدينار => Currency</option>
+                <option value="3">الدرهم => Currency</option>
+            </select><br><br>
+            <button type="submit">Convert</button>
+        </form>
+    </div>
+    <div class="result-div1">
+        الدرهم: <span class="result1"></span><br><br>
+        الدينار: <span class="result2"></span><br><br><br><br>
+    </div>
+    <div class="result-div2"></div>
+    <div class="error"></div>
+    <script src="main.js"></script>
+</body>
+</html>
