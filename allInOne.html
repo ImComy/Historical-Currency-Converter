@@ -4,6 +4,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Currency Converter</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.header label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.input, .amount, .select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.result-div1, .result-div2 {
+    margin-top: 20px;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.result-div1 span {
+    font-weight: bold;
+    color: #007bff;
+    font-size: 18px;
+}
+
+@media (max-width: 600px) {
+    .header, .result-div1, .result-div2 {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .input, .amount, .select {
+        font-size: 14px;
+    }
+
+    button[type="submit"] {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+}
+
+</style>
 </head>
 <body>
     <div class="header">
